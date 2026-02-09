@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 130px;
+}
+header div.logo_name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+header div.logo_name div.text h1 {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 800px;
+}
+header div.logo_name div.text h1 span {
+  color: #36b864;
+}
+header div.logo_name div.text p {
+  color: #4d4d4d;
+  font-size: 13px;
+  font-weight: 400;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 16px;
+}
+header nav ul li a.green_home {
+  color: #36b864;
+}
+header button.quote {
+  width: 159px;
+  height: 48px;
+  border-radius: 6px;
+  background-color: #36b864;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+$primary_color: #36b864;
+$basic_color: #4d4d4d;
+$basic_font_size: 16px;
+$black: #000000;
+$white: #ffffff;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 98px;
+  @include flex;
+  justify-content: space-between;
+  padding: 0 130px;
+
+  div.logo_name {
+    @include flex;
+    gap: 9px;
+    div.text {
+      h1 {
+        color: $black;
+        font-size: 25px;
+        font-weight: 800px;
+        span {
+          color: $primary_color;
+        }
+      }
+      p {
+        color: $basic_color;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      @include flex;
+      gap: 29px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $basic_color;
+          font-size: $basic_font_size;
+        }
+        a.green_home {
+          color: $primary_color;
+        }
+      }
+    }
+  }
+
+  button.quote {
+    width: 159px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: $primary_color;
+    font-size: $basic_font_size;
+    color: $white;
+    border: none;
+  }
+}
