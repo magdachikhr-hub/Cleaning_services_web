@@ -55,4 +55,32 @@ header button.quote {
   font-size: 16px;
   color: #ffffff;
   border: none;
+}
+
+main section.first {
+  height: 585px;
+  background-image: url(./clean.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main section.first div.first_section_text {
+  height: 377px;
+  width: 660px;
+  padding: 104px 0 0 135px;
+}
+main section.first div.first_section_text h2,
+main section.first div.first_section_text p.fair_price {
+  color: #111d15;
+}
+main section.first div.first_section_text p {
+  color: #666666;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+main section.first div.first_section_text h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 115%;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=style.css.map */

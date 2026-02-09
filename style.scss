@@ -6,6 +6,8 @@ $basic_font_size: 16px;
 $black: #000000;
 $white: #ffffff;
 $font_family: "Be Vietnam Pro", sans-serif;
+$secondary_color: #111d15;
+$paragraph_color: #666666;
 
 @mixin align-center {
   display: flex;
@@ -71,5 +73,37 @@ header {
     font-size: $basic_font_size;
     color: $white;
     border: none;
+  }
+}
+
+main {
+  section.first {
+    height: 585px;
+    background-image: url(./clean.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: right -100px top 0px;
+
+    div.first_section_text {
+      height: 377px;
+      width: 660px;
+      padding: 104px 0 0 135px;
+      h2,
+      p.fair_price {
+        color: $secondary_color;
+      }
+      p {
+        color: $paragraph_color;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 114.99999999999999%;
+        margin-top: 12px;
+        margin-bottom: 24px;
+      }
+    }
   }
 }
